@@ -1,0 +1,44 @@
+<!-- Union_clonecoding_notice -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="notice.css">
+</head>
+<body>
+    <h2>공지사항</h2>
+    <div class="notice-board">
+        <div class="notice-item">
+            <h3 onclick="toggleDetail('detail1')">공지사항 제목 1</h3>
+            <div id="detail1" class="notice-detail" style="display: none;">
+                <p>여기에 공지사항 내용이 들어갑니다. 상세 내용입니다.</p>
+            </div>
+        </div>
+        <div class="notice-item">
+            <h3 onclick="toggleDetail('detail2')">공지사항 제목 2</h3>
+            <div id="detail2" class="notice-detail" style="display: none;">
+                <p>여기에 두 번째 공지사항 내용이 들어갑니다. 상세 내용입니다.</p>
+            </div>
+        </div>
+        <!-- 추가 공지사항 항목을 여기에 추가 -->
+    </div>
+
+    <script>
+        function toggleDetail(id) {
+            const detail = document.getElementById(id);
+            detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    
+    </footer>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="Union_clonecoding_map.html">지도</a>
+            <a href="Union_clonecoding_schedule.html">타임테이블</a>
+            <a href="Union_clonecoding_notice.html">공지사항</a>
+        </nav>
+    </footer>
+</body>
+</html>
